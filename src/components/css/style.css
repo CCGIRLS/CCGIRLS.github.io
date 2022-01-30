@@ -1,9 +1,7 @@
 .container {
     padding: 64px;
 }
-.row-x{
-    margin-top: 7%;
-}
+
 .column {
     float: left;
     width: 33.3%;
@@ -16,45 +14,41 @@
     margin: 8px;
 }
 
-
 .card-container {
     padding: 0 16px;
 }
 
-.card-container::after,
-.row::after {
+.card-container::after, .row::after {
     content: "";
     clear: both;
     display: table;
 }
 
-  
 .row:after {
     content: "";
     display: table;
     clear: both
 }
-  
+
 .column-66 {
     float: left;
     width: 66.66666%;
     padding: 20px;
 }
-  
+
 .column-33 {
     float: left;
     width: 33.33333%;
     padding: 20px;
 }
-  
+
 .large-font {
     font-size: 49px;
     color: black;
     margin-top: 13%;
 }
-  
-  
-.description-x{
+
+.description-x {
     text-align: justify;
     margin-top: 5%;
     margin-left: 0%;
@@ -62,39 +56,45 @@
     font-weight: 300;
 }
 
-.subdescription{
+.subdescription {
     margin-top: 5%;
     text-align: justify;
     font-weight: 300;
 }
 
-.large-font-partion{
+.large-font-partion {
     font-size: 49px;
     color: black;
     margin-top: 4%;
-
 }
-.description-partion{
+
+.description-partion {
     text-align: justify;
-    margin-top: 5%;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-top: 3%;
+    margin-left: 13%;
+    /* margin-right: 20%; */
     font-weight: 300;
 }
 
 img {
-   /*  display: block;
+    /*  display: block;
     height: auto;
     max-width: 100%; */
-   /*  max-width: 200%;
+    /*  max-width: 200%;
     margin-left: -30%; */
     margin-left: -30%;
     width: 100%;
 }
 
-.social-container {
+/* .social-container {
     padding: 25px 50px;
+    margin-left: 50%;
+} */
+.social-container {
+    margin-left: 75%;
+    margin-top: -5%;
 }
+
 .titule-follow {
     padding: 7px 0px 19px 0px;
 }
@@ -104,45 +104,60 @@ a.social {
     transition: transform 250ms;
     display: inline-block;
 }
-  
+
 a.social:hover {
     transform: translateY(-2px);
 }
-  
+
 a.medium {
     color: black;
 }
-  
+
 a.telegram {
     color: #4968ad;
 }
-  
+
 a.twitter {
     color: #49a1eb;
 }
-  
+
 a.instagram {
-    background: linear-gradient(#6616fc,#f394d3);
+    background: linear-gradient(#6616fc, #f394d3);
     color: red;
-    background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,.1));
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .1));
+}
+
+@media screen and (max-width: 648px) {
+    .info {
+        text-align: left;
+        text-align: initial;
+        margin-left: 11%;
+    }
+    .column {
+        width: 100%;
+        display: block;
+    }
+    .social-container {
+        margin-left: 0;
+        margin-top: 7%;
+    }
+
+
 }
 
 @media screen and (max-width: 900px) {
     .container {
         padding: 4px;
     }
-
-    .column-66,
-    .column-33 {
-      width: 100%;
-      text-align: center;
+    .column-66, .column-33 {
+        width: 100%;
+        text-align: center;
     }
     .large-font {
         font-size: 38px;
         color: black;
         margin-top: 43%;
     }
-
     img {
         margin: auto;
         width: 60%;
@@ -153,7 +168,6 @@ a.instagram {
         color: black;
         margin-top: 33%;
     }
-
     .description-x {
         text-align: justify;
         margin-top: 10%;
@@ -166,24 +180,21 @@ a.instagram {
         margin-right: 7%;
         font-weight: 300;
     }
-    .social-container {
-        padding: 0;
-        margin-top: 17%;
+    .row {
+        margin-top: -25%;
     }
-   
-
 }
 
-@media screen and (max-width: 650px) {
+/* @media screen and (max-width: 650px) {
     .column {
         width: 100%;
         display: block;
     }
-}
+} */
 
 /* ----------- iPad Pro ----------- */
-@media only screen and (min-width: 1024px)  and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
 
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .column {
         float: left;
         width: 49%;
@@ -191,8 +202,14 @@ a.instagram {
         padding: 0 8px;
         margin-top: 6%;
     }
-    .App-logoUnicornio{
+    .App-logoUnicornio {
         margin-left: 80%;
     }
+    .row {
+        margin-top: 0%;
+    }
+    /* .row-x{
+        margin-top: -30%;
+    } */
     
 }
